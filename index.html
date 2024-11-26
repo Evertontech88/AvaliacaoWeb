@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Web e Servidores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Avaliação Web e Servidores</h1>
+    </header>
+    <main>
+        <section id="publicacao-web">
+            <h2>O que é uma publicação web?</h2>
+            <p>Uma publicação é conteúdo disponibilizado online, acessível ao público . Isso inclui artigos em blogs, vídeos, imagens e outros tipos de mídia.</p>
+            <h3>Quais tipos  de Aplicações Web existem?</h3>
+            
+                <li><strong>Aplicações Web Estáticas:</strong> São compostos com painas de conteudos fixo, e não precisão de progração(sem backend) tendo apenas HTML e CSS.</li>
+                <li><strong>Aplicações Web Dinâmicas:</strong> Já esse tem interação com usuario, geralmente contem banco de dados, uzando linguagem de programação.</li>
+       </ul>
+        </section>
+
+        <section id="dominio-dns">
+            <h2>O que é um domínio e um DNS?</h2>
+            <p>Um <strong>domínio</strong> é o responsavel por permitir que os usuários acessem a WEB por meio de nomes, ex:www.everton.com" . O <strong>DNS (Domain Name System)</strong> é o sistema que traduz esses nomes de domínio em endereços IP, permitindo que os navegadores carreguem os recursos da internet.</p>
+        </section>
+
+        <section id="servidor-compartilhado-dedicado">
+            <h2>Servidor Compartilhado vs. Servidor Dedicado</h2>
+            <p>Um <strong>servidor compartilhado</strong> hospeda vários sites em um único servidor físico, compartilhando recursos como CPU e memória. Já um <strong>servidor dedicado</strong> oferece todos os recursos de um servidor exclusivamente para um único cliente.</p>
+            <h3>Vantagens e Desvantagens</h3>
+            <ul>
+                <li><strong>Servidor Compartilhado:</strong> É um servidor fisico que compartilha varios sites, tendo seus recursos utilizado por varios sites hospedados nele.</li>
+                <li><strong>Servidor Dedicado:</strong> Servidor utilizado por apenas uma instituição, permitindo controle total sobre as suas aplicações.</li>
+            </ul>
+        </section>
+
+        <section id="servidor-web">
+            <h2>O que é um servidor web?</h2>
+            <p>Um servidor web é um software e hardware que utiliza o protocolo HTTP para responder a solicitações de clientes, entregando páginas web ao navegador. Os dois principais servidores web são o <strong>Apache</strong> e o <strong>NGINX</strong>.</p>
+        </section>
+
+        <section>
+            <h2>Principais Tipos de Servidores Web</h2>
+            Apache HTTP Server (Apache)
+            
+            <p> : É um dos servidores web mais populares e amplamente utilizados. É de código aberto e pode ser executado em diversos sistemas operacionais, como Linux, Windows e macOS.
+            Características: Flexível, com suporte a módulos que permitem adicionar funcionalidades extras, como autenticação e criptografia2.</p>
+            
+            NGINX
+            
+            <p></p>Descrição: Conhecido por sua alta performance e capacidade de lidar com um grande número de conexões simultâneas. Também é de código aberto e pode funcionar como servidor web, proxy reverso e balanceador de carga.
+            Características: Eficiência no uso de recursos, ideal para sites de alto tráfego.</p>
+        </section>
+        
+
+        <section id="backup-projeto">
+            <h2>Como fazer o backup de um projeto de forma compactada</h2>
+            <p>Para fazer o backup de um projeto, você pode usar ferramentas como o <strong>tar</strong> no Linux. Aqui está um exemplo de como fazer isso:</p>
+            <pre><code>tar -czvf backup_projeto.tar.gz /caminho/do/projeto</code></pre>
+            <p>Para restaurar o backup, use o comando:</p>
+            <pre><code>tar -xzvf backup_projeto.tar.gz -C /caminho/de/destino</code></pre>
+             <img src="https://linuxiac.b-cdn.net/wp-content/uploads/2022/08/tar-exclude.jpg" alt="alternatetext">  <img src="https://blog.sucuri.net/wp-content/uploads/2017/08/08092017-how-to-create-backups-using-command-line-tools_export-mysql.gif" alt="Comandos"> 
+        </section>
+
+        <section id="servidor-banco-dados">
+            <h2>O que é um servidor de banco de dados?</h2>
+            <p>Um servidor de banco de dados é um sistema que fornece serviços de banco de dados aos clientes. Ele gerencia o acesso e a recuperação de dados. Exemplos incluem MySQL e PostgreSQL.</p>
+            <h3>Backup e Restauração</h3>
+            <p>Para fazer o backup de um banco de dados MySQL, use o comando:</p>
+            <pre><code>mysqldump -u usuário -p banco_de_dados > backup.sql</code></pre>
+            <p>Para restaurar o backup, use:</p>
+            <pre><code>mysql -u usuário -p banco_de_dados < backup.sql</code></pre>
+            <img src="/Captura%20de%20tela%202024-11-25%20212322.png" alt="HTML5 Icon" style="width: 800px;height:550px;"> <img src="/Captura%20de%tela%2024-11-25%213903.png"style="width: 800px;height:550px;">
+        </section>
+
+        <section id="ssh">
+            <h2>O que é um serviço SSH?</h2>
+            <p>O <strong>SSH (Secure Shell)</strong> é um protocolo que permite acessar e gerenciar servidores remotamente de forma segura. Ele é usado para transferir arquivos e executar comandos em servidores remotos.</p>
+        </section>
+
+        <section id="linux">
+            <h2>O que é Linux?</h2>
+            <p>O Linux é um sistema operacional open source baseado no kernel Linux. Ele é amplamente utilizado em servidores web devido à sua estabilidade e segurança.</p>
+            <h3>Principais Distribuições Usadas como Servidor Web</h3>
+            <ul>
+                <li><strong>Ubuntu Server:</strong> Popular e fácil de usar.</li>
+                <li><strong>CentOS:</strong> Conhecido por sua estabilidade.</li>
+                <li><strong>Debian:</strong> Famoso por sua segurança e robustez.</li>
+            </ul>
+        </section>
+
+        <section id="comandos-linux">
+            <h2>Comandos Básicos do Linux</h2>
+            <ul>
+                <li><strong>ls:</strong> Lista arquivos e diretórios.</li>
+                <li><strong>cd:</strong> Navega entre diretórios.</li>
+                <li><strong>cp:</strong> Copia arquivos ou diretórios.</li>
+                <li><strong>mv:</strong> Move ou renomeia arquivos ou diretórios.</li>
+                <li><strong>rm:</strong> Remove arquivos ou diretórios.</li>
+                <li><strong>chmod:</strong> Altera permissões de arquivos ou diretórios.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Fontes de Pesquisa</p>
+        <p> https://pt.linux-console.net/?p=15743  </p>
+        <p>https://pt.linux-console.net/?p=15743</p>
+    </footer>
+</body>
+</html>
